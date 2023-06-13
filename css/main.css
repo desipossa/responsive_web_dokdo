@@ -1,0 +1,9 @@
+.mainSlide {
+    width: 1200px;
+    height: 50vh;
+}
+
+
+.swiper-slide {
+    background: tomato;
+}
