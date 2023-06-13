@@ -7,3 +7,13 @@
 .swiper-slide {
     background: tomato;
 }
+
+.bgnum {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/num.png);
+    transition: 0.5s;
+}
