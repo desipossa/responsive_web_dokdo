@@ -209,6 +209,45 @@
     font-size: 100rem;
 }
 
+.cicle {
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    width: 500px;
+    height: 500px;
+    background: tomato;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+.cicle span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 250px;
+    width: 3px;
+    background: #ffffff;
+}
+
+.cicle span:nth-child(1) {
+    transform: translate(-50%, 0) rotate(0deg);
+    transform-origin: center bottom;
+}
+
+.cicle span::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 50px;
+    height: 50px;
+    background: #09847F;
+    border-radius: 50%;
+}
+
 .footer {
     height: 100vh;
 }
