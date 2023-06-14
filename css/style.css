@@ -151,9 +151,62 @@
 
 .main_visual {
     position: relative;
-    z-index: 1;
     height: 100vh;
-    background: url(../images/img_visual01.jpg);
+}
+
+.main_slide .itm {
+    font-size: 100rem;
+    transition: 1s;
+}
+
+.main_slide .itm.on {
+    font-size: 200rem;
+}
+
+.main_slide .itm01 {
+    height: 100vh;
+    background: url(../images/img_visual01.jpg) no-repeat center center/cover;
+}
+
+.main_slide .itm02 {
+    height: 100vh;
+    background: url(../images/img_visual02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    max-width: 1600rem;
+    width: 100%;
+}
+
+.main_visual .arrows i {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.main_visual .arrows .left {
+    left: 15rem;
+}
+
+.main_visual .arrows .right {
+    right: 15rem;
+}
+
+.main_visual .arrows i::before {
+    font-size: 40rem;
+    color: var(--wc);
+    padding: 30rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.main_visual .slide_dots li.on button {
+    font-size: 100rem;
 }
 
 .footer {

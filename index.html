@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>독도 따라만들기 - 왜 저런다냐...</title>
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css?ver=1.0">
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/custom.js?ver=1.0"></script>
 </head>
 
@@ -67,6 +69,31 @@
         </header>
         <main>
             <section class="main_visual">
+                <div class="main_slide swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide itm01 itm">01</div>
+                        <div class="swiper-slide itm02 itm">02</div>
+                    </div>
+                </div>
+
+                <div class="arrows">
+                    <i class="bi bi-chevron-left left"></i>
+                    <i class="bi bi-chevron-right right"></i>
+                </div>
+
+                <ul class="slide_dots">
+                    <li>
+                        <button>01</button>
+                    </li>
+                    <li>
+                        <button>02</button>
+                    </li>
+                </ul>
+
+                <div class="num">
+                    <span>슬라이드 번호</span> / <strong>슬라이드갯수</strong>
+                </div>
+
 
             </section>
         </main>
