@@ -5,35 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>독도 따라만들기 - 왜 저런다냐...</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css?ver=1.0">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/custom.js?ver=1.0"></script>
 </head>
 
 <body>
-    <section class="mainVisual">
-        <div class="swiper mainSlide">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">01</div>
-                <div class="swiper-slide">02</div>
-                <div class="swiper-slide">03</div>
+    <div class="wrap">
+        <header class="header">
+            <div class="inner header_wrap">
+                <h1>
+                    <a href="/">
+                        <img src="./images/logo_simbol.svg" alt="">
+                        <img src="./images/logo_tx.svg" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul class="main_menu">
+                        <li>
+                            <a href="">전시관 소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="">인사말</a></li>
+                                <li><a href="">전시관 연혁</a></li>
+                                <li><a href="">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">관람 정보</a>
+                            <ul class="sub_menu">
+                                <li><a href="">관람안내</a></li>
+                                <li><a href="">단체예약</a></li>
+                                <li><a href="">예약확인 취소</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">전시 안내 </a></li>
+                        <li>
+                            <a href="">독도 자료실</a>
+                            <ul class="sub_menu">
+                                <li><a href="">독도현황</a></li>
+                                <li><a href="">독도사진</a></li>
+                                <li><a href="">교육자료실</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">열린광장</a>
+                            <ul class="sub_menu">
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">포토앨범</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="login_area">
+                    <ul class="member">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                    </ul>
+                </div>
             </div>
+        </header>
+        <main>
+            <section class="main_visual">
 
-        </div>
-        <div class="arrows">
-            <button class="left">이전</button>
-        </div>
-        <ul class="dots">
-            <li><button>01</button></li>
-            <li><button>02</button></li>
-            <li><button>03</button></li>
-        </ul>
-        <div class="num"></div>
-        <div class="bgnum">
+            </section>
+        </main>
+        <footer class="footer">
 
-        </div>
-    </section>
+        </footer>
+    </div>
 </body>
 
 </html>
