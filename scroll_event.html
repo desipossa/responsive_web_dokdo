@@ -1,0 +1,27 @@
+<script>
+
+    $(window).on('load scroll', function () {
+        const sct = $(window).scrollTop();
+        $('.sc').each(function () {
+            if (sct + $(window).innerHeight() / 2 > $(this).offset().top) {
+                $(this).addClass('on')
+            } else {
+                $(this).removeClass('on')
+            }
+        })
+    })
+
+
+    window.addEventListener('scroll', () => {
+        const sct = window.scrollY;
+        document.querySelectorAll('.sc').forEach((it, idx) => {
+            if (sct + window.innerHeight / 2 > it.offsetTop) {
+                it.classList.add('on')
+            } else {
+                it.classList.remove('on')
+            }
+        })
+    })
+
+
+</script>

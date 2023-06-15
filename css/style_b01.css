@@ -155,75 +155,20 @@
 }
 
 .main_slide .itm {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
+    font-size: 100rem;
+    transition: 1s;
 }
 
-.main_slide .itm .slide-image {
-    position: absolute;
-    inset: 0 0 0 0;
+.main_slide .itm.on {
+    font-size: 200rem;
 }
 
-.main_slide .itm .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-
-    text-align: center;
-}
-
-.main_slide .itm .img_box {
-    margin: 0 0 50rem 0;
-}
-
-.main_slide .itm p {
-    color: var(--wc);
-    margin: 0 0 50rem 0;
-    text-align: center;
-    font-size: 17rem;
-    font-weight: 300;
-    line-height: 26rem;
-    transform: translate(-100rem, 0);
-    opacity: 0;
-    transition: .5s 1s;
-}
-
-.main_slide .itm.on p {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-.main_slide .itm .btn {
-    display: inline-block;
-    color: var(--wc);
-    font-size: 20rem;
-    padding: 20rem 30rem;
-    border: 3px solid var(--wc);
-    border-radius: 30rem;
-
-    transform: translate(100rem, 0);
-    opacity: 0;
-    transition: .5s 1.5s;
-}
-
-.main_slide .itm.on .btn {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-/* .swiper-wrapper {
-    transition-timing-function: cubic-bezier(0.17, 0.46, 1, 0.39);
-} */
-
-.main_slide .itm01 .slide-image {
+.main_slide .itm01 {
     height: 100vh;
     background: url(../images/img_visual01.jpg) no-repeat center center/cover;
 }
 
-.main_slide .itm02 .slide-image {
+.main_slide .itm02 {
     height: 100vh;
     background: url(../images/img_visual02.jpg) no-repeat center center/cover;
 }
@@ -232,7 +177,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 998;
+    z-index: 999;
     transform: translate(-50%, -50%);
     max-width: 1600rem;
     width: 100%;
@@ -260,7 +205,48 @@
     border-radius: 50%;
 }
 
+.main_visual .slide_dots li.on button {
+    font-size: 100rem;
+}
 
+.cicle {
+    position: absolute;
+    top: 500px;
+    right: 500px;
+    width: 500px;
+    height: 500px;
+    background: tomato;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+.cicle span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 250px;
+    width: 3px;
+    background: #ffffff;
+}
+
+.cicle span:nth-child(1) {
+    transform: translate(-50%, 0) rotate(0deg);
+    transform-origin: center bottom;
+}
+
+.cicle span::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 50px;
+    height: 50px;
+    background: #09847F;
+    border-radius: 50%;
+}
 
 .footer {
     height: 100vh;
