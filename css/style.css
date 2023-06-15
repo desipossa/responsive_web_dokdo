@@ -31,6 +31,16 @@
     color: var(--wc);
 }
 
+.btn3 {
+    display: inline-block;
+    font-size: 14rem;
+    padding: 5rem 10rem 4rem 10rem;
+    border-radius: 10rem;
+    overflow: hidden;
+    color: var(--mc);
+    border: 2px solid var(--mc);
+}
+
 .btn::after {
     content: "\f1be";
     font-family: bootstrap-icons;
@@ -480,6 +490,17 @@
     padding: 0 0 100rem 0;
 }
 
+.main_notice .content {
+    opacity: 0;
+    transform: translate(0, 100rem);
+    transition: .8s;
+}
+
+.main_notice.on .content {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 .main_notice h2 {
     font-size: 50rem;
     font-weight: 700;
@@ -493,6 +514,7 @@
     color: var(--wc);
     border-radius: 50%;
     margin: 0 10rem 0 0;
+    cursor: pointer;
 }
 
 .main_notice p {
@@ -514,6 +536,25 @@
 
 .main_notice img {
     width: 100%;
+    height: 300rem;
+    object-fit: cover;
+}
+
+.main_notice .card {
+    padding: 15rem;
+    background: var(--gc);
+    border-radius: 10rem;
+}
+
+.main_notice .card .img_box {
+    border-radius: 5rem;
+    overflow: hidden;
+    margin: 0 0 15rem 0;
+}
+
+.main_notice .card strong {
+    display: block;
+    margin: 10rem 0;
 }
 
 
