@@ -18,18 +18,39 @@
     font-size: 20rem;
     padding: 20rem 30rem;
     border-radius: 30rem;
+    overflow: hidden;
 }
 
 .btn::after {
     content: "\f1be";
     font-family: bootstrap-icons;
-    vertical-align: middle;
+    vertical-align: -3px;
     margin: 0 0 0 15rem;
 }
 
 .btn.wc {
+    position: relative;
     color: var(--wc);
     border: 3px solid var(--wc);
+
+}
+
+.btn.wc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    z-index: -1;
+    background: var(--mc);
+    transition: .5s;
+}
+
+.btn.wc:hover::before {
+    top: auto;
+    bottom: 0;
+    height: 100%;
 }
 
 .btn.mc {
