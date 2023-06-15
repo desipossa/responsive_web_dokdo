@@ -1,5 +1,6 @@
 $(function () {
 
+
     $(window).on('scroll', function () {
         let sct = $(window).scrollTop();
         sct > 0
