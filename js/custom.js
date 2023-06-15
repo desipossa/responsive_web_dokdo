@@ -7,6 +7,18 @@ $(function () {
             : $('.header').removeClass('on');
     });
 
+
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        $('._se_').each(function () {
+            if (sct + $(window).innerHeight() - 200 > $(this).offset().top) {
+                $(this).addClass('on')
+            } else {
+                $(this).removeClass('on')
+            }
+        })
+    })
+
     const mainSlide = new Swiper('.main_slide', {
         loop: true,
         parallax: true,

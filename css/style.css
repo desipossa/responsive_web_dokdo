@@ -4,12 +4,45 @@
     --lc: #dddddd;
     --wc: #ffffff;
     --dc: #444444;
+    --gc: #f9f9f9;
 }
 
 .inner {
     max-width: 1440rem;
     margin: 0 auto;
     padding: 0 15rem;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 20rem;
+    padding: 20rem 30rem;
+    border-radius: 30rem;
+}
+
+.btn::after {
+    content: "\f1be";
+    font-family: bootstrap-icons;
+    vertical-align: middle;
+    margin: 0 0 0 15rem;
+}
+
+.btn.wc {
+    color: var(--wc);
+    border: 3px solid var(--wc);
+}
+
+.btn.mc {
+    color: var(--mc);
+    border: 3px solid var(--mc);
+}
+
+.section {
+    padding: 100rem 0;
+}
+
+.section.gc {
+    background: var(--gc);
 }
 
 .wrap {}
@@ -202,13 +235,6 @@
 }
 
 .main_slide .itm .btn {
-    display: inline-block;
-    color: var(--wc);
-    font-size: 20rem;
-    padding: 20rem 30rem;
-    border: 3px solid var(--wc);
-    border-radius: 30rem;
-
     transform: translate(100rem, 0);
     opacity: 0;
     transition: .5s 1.5s;
@@ -304,8 +330,47 @@
 }
 
 
+.main_content {}
 
+.main_content .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30rem;
+}
 
+.main_content .content>* {
+    padding: 80rem 60rem;
+}
+
+.main_content .content .left {
+    position: relative;
+    border-radius: 50rem;
+    background: var(--gc);
+}
+
+.main_content .content .left::after {
+    content: "";
+    position: absolute;
+    bottom: -20rem;
+    right: 0;
+    width: 400rem;
+    height: 150rem;
+    background: url(../images/img_logo2.svg) no-repeat right bottom;
+    filter: invert();
+}
+
+.main_content .content h3 {
+    font-size: 24rem;
+    font-weight: 700;
+    margin: 0 0 17rem 0;
+}
+
+.main_content .content p {
+    font-size: 15rem;
+    font-weight: 300;
+    line-height: 20rem;
+    margin: 0 0 57rem 0;
+}
 
 .footer {
     height: 100vh;
