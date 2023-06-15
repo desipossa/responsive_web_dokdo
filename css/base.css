@@ -155,28 +155,11 @@ figure {
 }
 
 /* 링크 기본값 */
-a:link {
+a {
     text-decoration: none;
-    color: #444;
+    color: inherit;
 }
 
-a:visited {
-    text-decoration: none;
-    color: #444;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #444;
-}
-
-a:active {
-    text-decoration: none;
-}
-
-a:focus {
-    text-decoration: none;
-}
 
 /* 리스트 스타일 제거 */
 ul,

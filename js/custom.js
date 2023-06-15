@@ -38,5 +38,15 @@ $(function () {
         mainSlide.slideNext();
     });
 
+    const noticeSlide = new Swiper('.notice_slide', {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+    })
+
 
 })

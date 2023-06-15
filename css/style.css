@@ -21,6 +21,16 @@
     overflow: hidden;
 }
 
+.btn2 {
+    display: inline-block;
+    font-size: 18rem;
+    padding: 10rem 20rem;
+    border-radius: 20rem;
+    overflow: hidden;
+    background: var(--dc);
+    color: var(--wc);
+}
+
 .btn::after {
     content: "\f1be";
     font-family: bootstrap-icons;
@@ -401,6 +411,28 @@
     margin: 0 0 17rem 0;
 }
 
+.main_content .content .left {
+    opacity: 0;
+    transform: translate(0, 100rem);
+    transition: .8s;
+}
+
+.main_content.on .content .left {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.main_content .content .right {
+    opacity: 0;
+    transform: translate(0, 100rem);
+    transition: .8s .5s;
+}
+
+.main_content.on .content .right {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 .main_content .content .left p {
     font-size: 15rem;
     font-weight: 300;
@@ -418,10 +450,15 @@
 }
 
 .main_content .content .right .desc i {
-    background: var(--lc);
-    padding: 15rem;
+    background: var(--gc);
+    padding: 15rem 16rem;
     border-radius: 50%;
     font-size: 30rem;
+}
+
+.main_content .content .right .desc .tel {
+    font-size: 40rem;
+    font-weight: 700;
 }
 
 .main_content .content .list>* {
@@ -438,6 +475,47 @@
 .main_content .content .list>*::before {
     top: 10rem;
 }
+
+.main_notice {
+    padding: 0 0 100rem 0;
+}
+
+.main_notice h2 {
+    font-size: 50rem;
+    font-weight: 700;
+    margin: 0 0 27rem 0;
+}
+
+.main_notice .arrows i {
+    padding: 14rem 16rem;
+    font-size: 25rem;
+    background: var(--dc);
+    color: var(--wc);
+    border-radius: 50%;
+    margin: 0 10rem 0 0;
+}
+
+.main_notice p {
+    font-size: 15rem;
+    font-weight: 300;
+    line-height: 20rem;
+    margin: 0 0 57rem 0;
+}
+
+
+.main_notice .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.main_notice .right {
+    overflow: hidden;
+}
+
+.main_notice img {
+    width: 100%;
+}
+
 
 
 
