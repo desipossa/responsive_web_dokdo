@@ -58,6 +58,21 @@
     border: 3px solid var(--mc);
 }
 
+.list_dot>* {
+    position: relative;
+    padding: 0 0 0 15rem;
+}
+
+.list_dot>*::before {
+    content: "";
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    background: var(--mc);
+}
+
 .section {
     padding: 100rem 0;
 }
@@ -315,7 +330,7 @@
 .main_visual .btn_cicle {
     position: absolute;
     bottom: -100rem;
-    right: 100rem;
+    right: 300rem;
     z-index: 999;
 
     width: 200rem;
@@ -386,12 +401,46 @@
     margin: 0 0 17rem 0;
 }
 
-.main_content .content p {
+.main_content .content .left p {
     font-size: 15rem;
     font-weight: 300;
     line-height: 20rem;
     margin: 0 0 57rem 0;
 }
+
+.main_content .content .right .desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30rem 0;
+    padding: 0 0 15rem 0;
+    border-bottom: 1px dashed var(--lc);
+}
+
+.main_content .content .right .desc i {
+    background: var(--lc);
+    padding: 15rem;
+    border-radius: 50%;
+    font-size: 30rem;
+}
+
+.main_content .content .list>* {
+    display: grid;
+    grid-template-columns: 100rem 1fr;
+    margin: 0 0 20rem 0;
+    line-height: 1.6;
+}
+
+.main_content .content .list .ls2 {
+    letter-spacing: 30rem;
+}
+
+.main_content .content .list>*::before {
+    top: 10rem;
+}
+
+
+
 
 .footer {
     height: 100vh;
