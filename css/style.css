@@ -681,3 +681,41 @@
     bottom: 200rem;
     margin: 0 0 0 160rem;
 }
+
+.footer .bottom {
+    padding: 50rem 0 100rem 0;
+    background: #393846;
+    color: var(--gc);
+    font-size: 15rem;
+    font-weight: 300;
+}
+
+.footer .bottom .customer {
+    display: flex;
+    gap: 40rem;
+    margin: 0 0 10rem 0;
+}
+
+.footer .bottom .customer>* {
+    position: relative;
+}
+
+.footer .bottom .customer li~li::before {
+    content: "";
+    position: absolute;
+    left: -20rem;
+    top: 50%;
+    width: 2px;
+    height: 2px;
+    transform: translate(-50%, -50%);
+    background: var(--lc);
+}
+
+.footer .bottom .adress {
+    margin: 0 0 30rem 0;
+}
+
+.footer .bottom .copyright {
+    font-size: 12rem;
+    color: var(--lc);
+}
