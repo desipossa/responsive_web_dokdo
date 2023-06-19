@@ -63,6 +63,7 @@ $(function () {
 
     $('.mobile_btn').on('click', function () {
         $('.gnb').toggleClass('on');
+        $('.header').toggleClass('oo');
     });
 
     $('.gnb .main_menu>li>a').on('click', function (e) {

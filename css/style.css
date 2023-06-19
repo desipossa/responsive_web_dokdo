@@ -770,7 +770,7 @@
     }
 
     .section {
-        padding: 100rem 0;
+        padding: 50rem 0;
     }
 
     .section.gc {
@@ -816,7 +816,7 @@
         height: 39rem;
     }
 
-    .header.on h1 img:last-child {
+    .header.oo h1 img:last-child {
         filter: invert(0);
     }
 
@@ -1312,10 +1312,10 @@
         content: "";
         position: absolute;
         right: 30rem;
-        top: 50%;
-        transform: translate(0, -50%);
-        width: 100rem;
-        height: 100rem;
+        top: 30rem;
+        transform: translate(0, 0);
+        width: 50rem;
+        height: 50rem;
         background: url(../images/icon_experience.svg) no-repeat center center;
     }
 
@@ -1391,8 +1391,9 @@
 
     .footer .bottom .customer {
         display: flex;
-        gap: 40rem;
-        margin: 0 0 10rem 0;
+        flex-direction: column;
+        gap: 10rem;
+        margin: 0 0 20rem 0;
     }
 
     .footer .bottom .customer>* {
@@ -1412,6 +1413,7 @@
 
     .footer .bottom .adress {
         margin: 0 0 30rem 0;
+        line-height: 1.4;
     }
 
     .footer .bottom .copyright {
