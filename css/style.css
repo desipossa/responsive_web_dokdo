@@ -765,8 +765,10 @@
 
 
 @media (max-width: 768px) {
+
+    /* font-size 사파리 하한 9px 대응 w 390 / 16 */
     html {
-        font-size: 1px;
+        font-size: 0.24375vw;
     }
 
     .section {
