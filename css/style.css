@@ -766,7 +766,7 @@
 
 @media (max-width: 768px) {
     * {
-        outline: 1px solid --tomato;
+        outline: 1px solid tomato;
     }
 
     .section {
@@ -1236,8 +1236,8 @@
     .main_notice .right_slide {
         position: relative;
         padding: 30rem 0 80rem;
-        /* overflow: hidden; */
-        min-width: 0;
+        overflow: hidden;
+        /* min-width: 0; */
     }
 
     .main_notice .right_slide::before {
