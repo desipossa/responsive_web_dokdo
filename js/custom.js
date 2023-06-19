@@ -68,17 +68,13 @@ $(function () {
 
     $('.gnb .main_menu>li>a').on('click', function (e) {
         if ($('.gnb').hasClass('on')) {
-            e.preventDefault();
-            $(this)
-                .next()
-                .stop()
-                .slideToggle();
-            // $(this)
-            //     .parent()
-            //     .siblings()
-            //     .find('.sub_menu')
-            //     .stop()
-            //     .slideUp();
+
+            //서버메뉴가 없으면 바로 클릭되게 하기
+            if ($(this).next().size() != 0) {
+                e.preventDefault();
+            }
+            $(this).next().stop().slideToggle();
+            $(this).parent().siblings().find('.sub_menu').stop().slideUp();
         }
     });
 
