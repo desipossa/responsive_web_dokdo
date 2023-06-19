@@ -766,9 +766,8 @@
 
 @media (max-width: 768px) {
     html {
-        font-size: 6.25%;
+        font-size: 1px;
     }
-
 
     .section {
         padding: 50rem 0;
